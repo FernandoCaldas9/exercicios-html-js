@@ -3,50 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Exercícios HTML/JS - Fernando Caldas</title>
+  <title>Exercícios de HTML e JavaScript</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
       padding: 2rem;
+      color: #333;
     }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
     h1 {
-      color: #0d6efd;
+      color: #1a73e8;
+      text-align: center;
     }
+
+    p {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
     ul {
       list-style: none;
       padding: 0;
     }
+
     li {
-      margin: 1rem 0;
+      margin-bottom: 1rem;
     }
+
     a {
+      display: block;
       text-decoration: none;
-      color: #0d6efd;
+      background: #1a73e8;
+      color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      transition: background 0.3s ease;
       font-weight: bold;
+      text-align: center;
     }
+
     a:hover {
-      text-decoration: underline;
+      background: #0c5ace;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>📚 Exercícios de HTML e JavaScript</h1>
-  <p>Selecione um exercício para abrir:</p>
-  <ul>
-    <li><a href="./exercicio-html-js-calculadora/index.html">📐 Calculadora</a></li>
-    <li><a href="./exercicio-html-js-calculo-de-dano/calculo-de-dano/dano.html">🗡️ Cálculo de Dano</a></li>
-    <li><a href="./exercicio-html-js-controle-financeiro/financas.html">💰 Controle Financeiro</a></li>
-    <li><a href="./exercicio-html-js-menu-interativo/menu.html">📋 Menu Interativo</a></li>
-    <li><a href="./exercicio-html-js-recrutas/index.html">👨‍🚀 Recrutas</a></li>
-    <li><a href="./exercicio-html-js-velocidade/velocidade/velocidade.html">🚗 Verificar Velocidade</a></li>
-    <li><a href="./exercicio-html-js-visitando-novas-cidades/cidades.html">🗺️ Visitando Novas Cidades</a></li>
-  </ul>
-  <footer style="margin-top: 2rem;">
-    <hr>
-    <p>Feito por <strong>Fernando Caldas</strong> 💻</p>
-    <p><a href="https://github.com/FernandoCaldas9">GitHub</a></p>
-  </footer>
+  <div class="container">
+    <h1>📚 Exercícios de HTML & JavaScript</h1>
+    <p>Explore abaixo os projetos que desenvolvi durante meus estudos:</p>
+
+    <ul>
+      <li><a href="exercicio-html-js-calculadora/index.html">🧮 Calculadora</a></li>
+      <li><a href="exercicio-html-js-calculo-de-dano/calculo-de-dano/dano.html">⚔️ Cálculo de Dano (RPG)</a></li>
+      <li><a href="exercicio-html-js-controle-financeiro/financas.html">💰 Controle Financeiro</a></li>
+      <li><a href="exercicio-html-js-menu-interativo/menu.html">📋 Menu Interativo</a></li>
+      <li><a href="exercicio-html-js-recrutas/index.html">🪖 Cadastro de Recrutas</a></li>
+      <li><a href="exercicio-html-js-velocidade/velocidade/velocidade.html">🚗 Verificador de Velocidade</a></li>
+      <li><a href="exercicio-html-js-visitando-novas-cidades/cidades.html">🌆 Cidades Visitadas</a></li>
+    </ul>
+
+    <footer>
+      Feito com 💻 e dedicação por <a href="https://github.com/FernandoCaldas9" target="_blank" style="color:#1a73e8;">Fernando Caldas</a>
+    </footer>
+  </div>
 </body>
 </html>
