@@ -1,36 +1,37 @@
 # 💻 Exercícios de HTML e JavaScript
 
-Este repositório contém meus exercícios práticos desenvolvidos durante meus estudos em **HTML, CSS e JavaScript**. Cada pasta representa um mini-projeto focado em lógica, estrutura e interatividade com o usuário.
+Este repositório reúne meus exercícios práticos desenvolvidos durante meus estudos em **HTML**, **CSS** e **JavaScript**. Cada pasta representa um mini-projeto focado em lógica, estrutura e interatividade com o usuário.
 
 ---
 
 ## 📁 Lista de Exercícios
 
-| Exercício | Descrição |
-|-----------|-----------|
-| [Calculadora](./exercicio-html-js-calculadora/index.html) | Calculadora com as quatro operações básicas usando JS |
-| [Cálculo de Dano](./exercicio-html-js-calculo-de-dano/calculo-de-dano/dano.html) | Simula o cálculo de dano em batalhas de RPG |
-| [Controle Financeiro](./exercicio-html-js-controle-financeiro/financas.html) | Gerencia entradas e saídas financeiras simples |
-| [Menu Interativo](./exercicio-html-js-menu-interativo/menu.html) | Menu com interatividade usando botões e DOM |
-| [Recrutas](./exercicio-html-js-recrutas/index.html) | Cadastro e exibição de dados de recrutas |
-| [Velocidade](./exercicio-html-js-velocidade/velocidade/velocidade.html) | Verifica excesso de velocidade de veículos |
-| [Visitando Novas Cidades](./exercicio-html-js-visitando-novas-cidades/cidades.html) | Armazena e mostra as cidades que o usuário visitou |
+| Exercício             | Descrição                                      |
+|-----------------------|------------------------------------------------|
+| Calculadora           | Calculadora com as quatro operações básicas usando JavaScript |
+| Cálculo de Dano       | Simula o cálculo de dano em batalhas de RPG    |
+| Controle Financeiro   | Gerenciamento simples de entradas e saídas financeiras |
+| Menu Interativo       | Menu com interatividade usando botões e manipulação do DOM |
+| Recrutas              | Cadastro e exibição de dados de recrutas       |
+| Velocidade            | Verifica o excesso de velocidade dos veículos  |
+| Visitando Novas Cidades | Armazena e mostra as cidades que o usuário visitou |
 
 ---
 
-## 🛠️ Tecnologias Usadas
+## 🛠️ Tecnologias Utilizadas
 
-- HTML5
-- CSS3 (em alguns)
-- JavaScript (foco principal)
+- HTML5  
+- CSS3 (em alguns casos)  
+- JavaScript (foco principal)  
 - DOM e manipulação de eventos
 
 ---
 
 ## 🚀 Objetivo
 
-Esses exercícios fazem parte da minha jornada de aprendizado em desenvolvimento web. Eles me ajudam a reforçar conceitos, treinar lógica e criar uma base sólida para projetos futuros.
+Esses exercícios fazem parte da minha jornada de aprendizado em desenvolvimento web. Eles me ajudam a fortalecer conceitos, treinar lógica e construir uma base sólida para projetos futuros.
 
 ---
 
-Feito com 💻 e dedicação por [Fernando Caldas](https://github.com/FernandoCaldas9)
+Feito com 💻 e dedicação por **Fernando Caldas**
+
