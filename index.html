@@ -5,26 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Exercícios de HTML e JavaScript</title>
   <style>
+    :root {
+      --azul-neon: #00aaff;
+      --preto-fundo: #0e0e0e;
+      --cinza-texto: #d0d0d0;
+      --cinza-claro: #1e1e1e;
+    }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0a0a0a;
       margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--preto-fundo);
+      color: var(--cinza-texto);
       padding: 2rem;
-      color: #e0e0e0;
     }
 
     .container {
       max-width: 800px;
       margin: auto;
-      background: #111;
+      background-color: var(--cinza-claro);
       padding: 2rem;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0, 119, 255, 0.3);
+      box-shadow: 0 0 15px rgba(0, 170, 255, 0.2);
     }
 
     h1 {
-      color: #007bff;
       text-align: center;
+      color: var(--azul-neon);
       font-size: 2rem;
       margin-bottom: 1rem;
     }
@@ -33,7 +40,6 @@
       text-align: center;
       font-size: 1.1rem;
       margin-bottom: 2rem;
-      color: #ccc;
     }
 
     ul {
@@ -48,29 +54,34 @@
     a {
       display: block;
       text-decoration: none;
-      background: #007bff;
-      color: #fff;
+      background: var(--azul-neon);
+      color: #000;
       padding: 1rem;
       border-radius: 8px;
-      transition: background 0.3s ease;
       font-weight: bold;
       text-align: center;
+      transition: all 0.3s ease;
     }
 
     a:hover {
-      background: #0056b3;
+      background: #0090d0;
+      transform: scale(1.03);
     }
 
     footer {
       text-align: center;
       margin-top: 2rem;
       font-size: 0.9rem;
-      color: #777;
+      color: #888;
     }
 
     footer a {
-      color: #00bfff;
+      color: var(--azul-neon);
       text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -95,4 +106,5 @@
   </div>
 </body>
 </html>
+
 
