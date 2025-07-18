@@ -2,223 +2,125 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fernando Caldas - Portfólio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercícios de HTML e JavaScript</title>
   <style>
+    :root {
+      --azul-escuro: #0511c2;
+      --preto-fundo: #0a0a0a;
+      --cinza-texto: #cccccc;
+      --cinza-escuro: #1a1a1a;
+    }
+
     * {
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-      scroll-behavior: smooth;
     }
 
     body {
-      background-color: #121212;
-      color: #f0f0f0;
-    }
-
-    header {
-      background-color: #000;
+      margin: 0;
+      background-color: var(--preto-fundo);
+      color: var(--cinza-texto);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 2rem;
+      min-height: 100vh;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      border-bottom: 2px solid #0511c2;
     }
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #0511c2;
-    }
-
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 1.5rem;
-    }
-
-    nav a {
-      color: #f0f0f0;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #0511c2;
-    }
-
-    .hero {
+    .container {
+      background-color: var(--cinza-escuro);
+      border-radius: 12px;
+      padding: 2.5rem 3rem;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 0 20px rgba(5, 17, 194, 0.5);
       text-align: center;
-      padding: 5rem 2rem;
-      background-color: #1e1e1e;
-      animation: fadeIn 1s ease;
     }
 
-    .hero h1 {
-      font-size: 2.5rem;
+    h1 {
+      font-size: 2.4rem;
       margin-bottom: 1rem;
+      color: var(--azul-escuro);
     }
 
-    .hero p {
-      font-size: 1.2rem;
+    p {
       margin-bottom: 2rem;
-      color: #ccc;
+      font-size: 1.1rem;
+      color: var(--cinza-texto);
     }
 
-    .btn {
-      background-color: #0511c2;
-      color: #fff;
-      padding: 0.8rem 1.5rem;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #020a80;
-    }
-
-    section {
-      padding: 3rem 2rem;
-      max-width: 900px;
-      margin: auto;
-      animation: fadeIn 1s ease;
-    }
-
-    h2 {
-      color: #0511c2;
-      margin-bottom: 1rem;
-    }
-
-    .projetos ul {
+    ul {
       list-style: none;
       padding: 0;
+      margin: 0 auto;
+      max-width: 400px;
+      text-align: left;
     }
 
-    .projetos li {
-      margin-bottom: 1rem;
+    li {
+      margin-bottom: 1.2rem;
     }
 
-    .projetos a {
-      color: #fff;
-      background-color: #0511c2;
-      padding: 0.6rem 1rem;
-      border-radius: 5px;
-      display: inline-block;
+    a {
+      display: block;
+      padding: 0.9rem 1rem;
+      background-color: var(--azul-escuro);
+      color: white;
       text-decoration: none;
-      transition: background 0.3s;
+      font-weight: 600;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(5, 17, 194, 0.4);
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-    .projetos a:hover {
-      background-color: #020a80;
+    a:hover,
+    a:focus {
+      background-color: #030a80;
+      transform: scale(1.05);
+      outline: none;
     }
 
     footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #000;
-      border-top: 1px solid #0511c2;
+      margin-top: 3rem;
       font-size: 0.9rem;
+      color: #666666;
     }
 
     footer a {
-      color: #0511c2;
+      color: var(--azul-escuro);
       text-decoration: none;
-      margin: 0 0.5rem;
+      font-weight: 600;
     }
 
-    footer a:hover {
+    footer a:hover,
+    footer a:focus {
       text-decoration: underline;
-    }
-
-    /* Animação de entrada */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Responsivo */
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo"><i class="fa-solid fa-code"></i> Fernando.dev</div>
-    <nav>
-      <ul>
-        <li><a href="#projetos"><i class="fa-solid fa-folder-open"></i> Projetos</a></li>
-        <li><a href="#sobre"><i class="fa-solid fa-user"></i> Sobre</a></li>
-        <li><a href="#contato"><i class="fa-solid fa-envelope"></i> Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
+    <h1>📚 Exercícios de HTML & JavaScript</h1>
+    <p>Explore abaixo os projetos que desenvolvi durante meus estudos:</p>
 
-  <section class="hero">
-    <h1>Olá, eu sou o Fernando 👨‍💻</h1>
-    <p>Estudante de Engenharia de Software apaixonado por desenvolvimento web.</p>
-    <a class="btn" href="#projetos"><i class="fa-solid fa-rocket"></i> Ver meus projetos</a>
-  </section>
-
-  <section id="projetos" class="projetos">
-    <h2>🛠️ Projetos</h2>
     <ul>
-      <li><a href="ex1.html"><i class="fa-solid fa-code"></i> Exercício 1 - Título e Parágrafo</a></li>
-      <li><a href="ex2.html"><i class="fa-solid fa-list"></i> Exercício 2 - Lista e Imagem</a></li>
-      <li><a href="ex3.html"><i class="fa-solid fa-pen"></i> Exercício 3 - Formulário simples</a></li>
+      <li><a href="exercicio-html-js-calculadora/index.html" target="_blank" rel="noopener">🧮 Calculadora</a></li>
+      <li><a href="exercicio-html-js-calculo-de-dano/calculo-de-dano/dano.html" target="_blank" rel="noopener">⚔️ Cálculo de Dano (RPG)</a></li>
+      <li><a href="exercicio-html-js-controle-financeiro/financas.html" target="_blank" rel="noopener">💰 Controle Financeiro</a></li>
+      <li><a href="exercicio-html-js-menu-interativo/menu.html" target="_blank" rel="noopener">📋 Menu Interativo</a></li>
+      <li><a href="exercicio-html-js-recrutas/index.html" target="_blank" rel="noopener">🪖 Cadastro de Recrutas</a></li>
+      <li><a href="exercicio-html-js-velocidade/velocidade/velocidade.html" target="_blank" rel="noopener">🚗 Verificador de Velocidade</a></li>
+      <li><a href="exercicio-html-js-visitando-novas-cidades/cidades.html" target="_blank" rel="noopener">🌆 Cidades Visitadas</a></li>
     </ul>
-  </section>
 
-  <section id="sobre">
-    <h2>👨‍🎓 Sobre mim</h2>
-    <p>Sou o Fernando Caldas, estudante de Engenharia de Software e criador dessa página. Estou aprendendo HTML, CSS e JavaScript e construindo meus primeiros projetos. Este é meu espaço de aprendizado e evolução!</p>
-  </section>
-
-  <section id="contato">
-    <h2>📬 Contato</h2>
-    <p>
-      <a class="btn" href="https://github.com/FernandoCaldas9" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-      <a class="btn" href="https://www.instagram.com/code55.io" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-    </p>
-  </section>
-
-  <footer>
-    <p>© 2025 Fernando Caldas. Feito com 💻 e café ☕</p>
-    <p>
-      <a href="https://github.com/FernandoCaldas9" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.instagram.com/code55.io" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    </p>
-  </footer>
+    <footer>
+      Feito com 💻 e dedicação por <a href="https://github.com/FernandoCaldas9" target="_blank" rel="noopener">Fernando Caldas</a>
+    </footer>
+  </div>
 </body>
 </html>
+
 
 
 
