@@ -2,35 +2,37 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Exercícios de HTML e JavaScript</title>
   <style>
     body {
+      background-color: #000000; /* preto */
+      color: #c0c0c0; /* cinza claro para o texto */
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f2f5;
       margin: 0;
       padding: 2rem;
-      color: #333;
     }
 
     .container {
+      background-color: #121212; /* preto suave */
       max-width: 800px;
       margin: auto;
-      background: #fff;
       padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px #0d47a1; /* sombra azul */
     }
 
     h1 {
-      color: #1a73e8;
+      color: #0d47a1; /* azul forte */
       text-align: center;
+      margin-bottom: 0.5rem;
     }
 
     p {
       text-align: center;
       font-size: 1.1rem;
       margin-bottom: 2rem;
+      color: #a0a0a0;
     }
 
     ul {
@@ -45,24 +47,33 @@
     a {
       display: block;
       text-decoration: none;
-      background: #1a73e8;
-      color: #fff;
+      background-color: #0d47a1; /* azul */
+      color: #ffffff;
       padding: 1rem;
       border-radius: 8px;
-      transition: background 0.3s ease;
       font-weight: bold;
       text-align: center;
+      transition: background-color 0.3s ease;
     }
 
     a:hover {
-      background: #0c5ace;
+      background-color: #1976d2; /* azul claro no hover */
     }
 
     footer {
       text-align: center;
       margin-top: 2rem;
       font-size: 0.9rem;
-      color: #777;
+      color: #555555; /* cinza escuro */
+    }
+
+    footer a {
+      color: #0d47a1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -82,8 +93,9 @@
     </ul>
 
     <footer>
-      Feito com 💻 e dedicação por <a href="https://github.com/FernandoCaldas9" target="_blank" style="color:#1a73e8;">Fernando Caldas</a>
+      Feito com 💻 e dedicação por <a href="https://github.com/FernandoCaldas9" target="_blank" rel="noopener noreferrer">Fernando Caldas</a>
     </footer>
   </div>
 </body>
 </html>
+
