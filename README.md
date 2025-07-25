@@ -6,6 +6,7 @@ Este repositório contém meus exercícios práticos desenvolvidos durante meus 
 
 ## 📁 Lista de Exercícios
 
+
 | Exercício | Descrição |
 |-----------|-----------|
 | [Calculadora](./exercicio-html-js-calculadora/index.html) | Calculadora com as quatro operações básicas usando JS |
@@ -15,6 +16,9 @@ Este repositório contém meus exercícios práticos desenvolvidos durante meus 
 | [Recrutas](./exercicio-html-js-recrutas/index.html) | Cadastro e exibição de dados de recrutas |
 | [Velocidade](./exercicio-html-js-velocidade/velocidade/velocidade.html) | Verifica excesso de velocidade de veículos |
 | [Visitando Novas Cidades](./exercicio-html-js-visitando-novas-cidades/cidades.html) | Armazena e mostra as cidades que o usuário visitou |
+| [Tabuada](./exercicio-html-js-tabuada/index.html) | Solicita um número ao usuário e exibe a tabuada de 1 a 20 |
+
+
 
 ---
 
