@@ -17,6 +17,8 @@ Este repositório contém meus exercícios práticos desenvolvidos durante meus 
 | [Velocidade](./exercicio-html-js-velocidade/velocidade/velocidade.html) | Verifica excesso de velocidade de veículos |
 | [Visitando Novas Cidades](./exercicio-html-js-visitando-novas-cidades/cidades.html) | Armazena e mostra as cidades que o usuário visitou |
 | [Tabuada](./Robo-da-Tabuada) | Solicita um número ao usuário e exibe a tabuada de 1 a 20 |
+| [Palíndromo]() | Verifica se uma palavra é um palíndromo com JavaScript |
+
 
 
 
