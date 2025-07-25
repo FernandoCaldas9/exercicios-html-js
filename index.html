@@ -2,122 +2,138 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Exercícios de HTML e JavaScript</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2c6d2d26b.js" crossorigin="anonymous"></script>
+  
   <style>
-    :root {
-      --azul-escuro: #0511c2;
-      --preto-fundo: #0a0a0a;
-      --cinza-texto: #cccccc;
-      --cinza-escuro: #1a1a1a;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      margin: 0;
-      background-color: var(--preto-fundo);
-      color: var(--cinza-texto);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 2rem;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background-color: #f8f9fa;
     }
-
-    .container {
-      background-color: var(--cinza-escuro);
-      border-radius: 12px;
-      padding: 2.5rem 3rem;
-      max-width: 700px;
-      width: 100%;
-      box-shadow: 0 0 20px rgba(5, 17, 194, 0.5);
-      text-align: center;
+    .card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 1rem;
-      color: var(--azul-escuro);
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
-
-    p {
-      margin-bottom: 2rem;
-      font-size: 1.1rem;
-      color: var(--cinza-texto);
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0 auto;
-      max-width: 400px;
-      text-align: left;
-    }
-
-    li {
-      margin-bottom: 1.2rem;
-    }
-
-    a {
-      display: block;
-      padding: 0.9rem 1rem;
-      background-color: var(--azul-escuro);
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(5, 17, 194, 0.4);
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    a:hover,
-    a:focus {
-      background-color: #030a80;
-      transform: scale(1.05);
-      outline: none;
-    }
-
     footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #666666;
-    }
-
-    footer a {
-      color: var(--azul-escuro);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    footer a:hover,
-    footer a:focus {
-      text-decoration: underline;
+      margin-top: 60px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>📚 Exercícios de HTML & JavaScript</h1>
-    <p>Explore abaixo os projetos que desenvolvi durante meus estudos:</p>
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h1 class="fw-bold mb-3">💻 Meus Exercícios em HTML & JavaScript</h1>
+      <p class="text-muted">Projetos simples para treinar lógica, DOM e interação com o usuário</p>
+      <a href="https://github.com/FernandoCaldas9" class="btn btn-dark btn-sm" target="_blank">
+        <i class="fab fa-github"></i> Meu GitHub
+      </a>
+    </div>
 
-    <ul>
-      <li><a href="exercicio-html-js-calculadora/index.html" target="_blank" rel="noopener">🧮 Calculadora</a></li>
-      <li><a href="exercicio-html-js-calculo-de-dano/calculo-de-dano/dano.html" target="_blank" rel="noopener">⚔️ Cálculo de Dano (RPG)</a></li>
-      <li><a href="exercicio-html-js-controle-financeiro/financas.html" target="_blank" rel="noopener">💰 Controle Financeiro</a></li>
-      <li><a href="exercicio-html-js-menu-interativo/menu.html" target="_blank" rel="noopener">📋 Menu Interativo</a></li>
-      <li><a href="exercicio-html-js-recrutas/index.html" target="_blank" rel="noopener">🪖 Cadastro de Recrutas</a></li>
-      <li><a href="exercicio-html-js-velocidade/velocidade/velocidade.html" target="_blank" rel="noopener">🚗 Verificador de Velocidade</a></li>
-      <li><a href="exercicio-html-js-visitando-novas-cidades/cidades.html" target="_blank" rel="noopener">🌆 Cidades Visitadas</a></li>
-    </ul>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">📱 Calculadora</h5>
+            <p class="card-text">Quatro operações básicas com JavaScript.</p>
+            <a href="./exercicio-html-js-calculadora/" class="btn btn-primary">Abrir</a>
+          </div>
+        </div>
+      </div>
 
-    <footer>
-      Feito com 💻 e dedicação por <a href="https://github.com/FernandoCaldas9" target="_blank" rel="noopener">Fernando Caldas</a>
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">🗡️ Cálculo de Dano</h5>
+            <p class="card-text">Simula batalhas de RPG com dano calculado.</p>
+            <a href="./exercicio-html-js-calculo-de-dano/calculo-de-dano/dano.html" class="btn btn-primary">Abrir</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">💰 Controle Financeiro</h5>
+            <p class="card-text">Entradas, saídas e balanço simples.</p>
+            <a href="./exercicio-html-js-controle-financeiro/financas.html" class="btn btn-primary">Abrir</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">📋 Menu Interativo</h5>
+            <p class="card-text">Botões e ações usando DOM.</p>
+            <a href="./exercicio-html-js-menu-interativo/menu.html" class="btn btn-primary">Abrir</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">🧍 Recrutas</h5>
+            <p class="card-text">Cadastro e exibição de novos recrutas.</p>
+            <a href="./exercicio-html-js-recrutas/" class="btn btn-primary">Abrir</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">🚗 Velocidade</h5>
+            <p class="card-text">Verifica se o veículo ultrapassou o limite.</p>
+            <a href="./exercicio-html-js-velocidade/velocidade/velocidade.html" class="btn btn-primary">Abrir</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">🌍 Visitando Novas Cidades</h5>
+            <p class="card-text">Armazena e mostra as cidades visitadas.</p>
+            <a href="./exercicio-html-js-visitando-novas-cidades/cidades.html" class="btn btn-primary">Abrir</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">🧠 Tabuada</h5>
+            <p class="card-text">Solicita um número e exibe a tabuada de 1 a 20.</p>
+            <a href="./exercicio-html-js-tabuada/" class="btn btn-primary">Abrir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center mt-5 text-muted">
+      Feito com 💻 e dedicação por <a href="https://github.com/FernandoCaldas9" target="_blank">Fernando Caldas</a>
     </footer>
   </div>
+
+  <!-- Bootstrap JS (opcional, para componentes interativos futuros) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
