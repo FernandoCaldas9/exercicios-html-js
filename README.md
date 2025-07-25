@@ -16,7 +16,7 @@ Este repositório contém meus exercícios práticos desenvolvidos durante meus 
 | [Recrutas](./exercicio-html-js-recrutas/index.html) | Cadastro e exibição de dados de recrutas |
 | [Velocidade](./exercicio-html-js-velocidade/velocidade/velocidade.html) | Verifica excesso de velocidade de veículos |
 | [Visitando Novas Cidades](./exercicio-html-js-visitando-novas-cidades/cidades.html) | Armazena e mostra as cidades que o usuário visitou |
-| [Tabuada](./exercicios-html-js/tree/main/Robo-da-Tabuada | Solicita um número ao usuário e exibe a tabuada de 1 a 20 |
+| [Tabuada](./exercicios-html-js/tree/main/Robo-da-Tabuada) | Solicita um número ao usuário e exibe a tabuada de 1 a 20 |
 
 
 
